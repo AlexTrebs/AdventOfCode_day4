@@ -15,7 +15,7 @@ def parseGames(line):
 
     tempList = line.split(":")
     
-    gameNum = tempList[0].strip().strip("Card ")
+    gameNum = tempList[0].strip("Card").strip()
     winningNumbers, drawnNumbers = parseWinningAndDrawn(tempList[1])
     
     return {gameNum: {"Winners":winningNumbers,"Drawn":drawnNumbers}}
