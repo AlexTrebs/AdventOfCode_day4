@@ -8,7 +8,6 @@ def getInputFile(fileName):
     return lines
 
 def parseWinningAndDrawn(game):
-
     return (list(map(int,g.strip().split())) for g in game.split("|"))
 
 def parseGames(line):
